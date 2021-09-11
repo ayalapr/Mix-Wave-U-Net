@@ -6,9 +6,9 @@ config_ingredient = Ingredient("cfg")
 @config_ingredient.config
 def cfg():
     # Base configuration
-    model_config = {"enst_path" : "/mnt/windaten/Datasets/ENST_Drums", # SET ENST PATH HERE
-                    "estimates_path" : "/mnt/windaten/Source_Estimates", # SET THIS PATH TO WHERE YOU WANT OUTPUTS PRODUCED BY THE TRAINED MODEL TO BE SAVED. Folder itself must exist!
-                    "data_path" : "/mnt/windaten/Mix-U-Net Data", # Set this to where the preprocessed dataset should be saved
+    model_config = {"enst_path" : "/content/drive/MyDrive/mixWaveUNet/musdb18", # SET ENST PATH HERE : ayalap - set to the proper location in my Drive 
+                    "estimates_path" : "/content/drive/MyDrive/mixWaveUNet/estimates", # SET THIS PATH TO WHERE YOU WANT OUTPUTS PRODUCED BY THE TRAINED MODEL TO BE SAVED. Folder itself must exist!: ayalap - set to the proper location in my Drive 
+                    "data_path" : "/content/drive/MyDrive/mixWaveUNet/Mix-U-Net_Data", # Set this to where the preprocessed dataset should be saved: ayalap - set to the proper location in my Drive 
 
                     "model_base_dir" : "checkpoints", # Base folder for model checkpoints
                     "log_dir" : "logs", # Base folder for logs files
