@@ -1,6 +1,7 @@
-numpy==1.18.3
+numpy~=1.19.2
 sacred==0.8.1
-tensorflow-gpu==2.5.1
+tensorflow-gpu==2.6
+numba==0.48
 librosa==0.7.2
 soundfile==0.10.3.post1
 lxml==4.5.0
