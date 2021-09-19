@@ -231,12 +231,12 @@ def get_dataset_pickle(model_config):
     
     if model_config["task"] == "dry":
                
-        with open('data/dataDryDict.pkl', "rb") as fp:
+        with open('/content/Mix-Wave-U-Net/data/dataDryDict.pkl', "rb") as fp:
             dataset = pickle.load(fp)
         
     elif model_config["task"] == "wet":
 
-        with open('data/dataWetDict.pkl', "rb") as fp:
+        with open('/content/Mix-Wave-U-Net/data/dataWetDict.pkl', "rb") as fp:
             dataset = pickle.load(fp)
                 
     for partition in ["train", "val", "test"]:
