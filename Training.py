@@ -35,7 +35,8 @@ def train(model_config, experiment_id, load_model=None):
     # Placeholders and input normalisation
 
     dataset = Datasets.get_dataset(model_config, input_shape, output_shape, partition="train")
-    iterator = dataset.make_one_shot_iterator()
+    #iterator = dataset.make_one_shot_iterator() ## V1
+    iterator = iter(dataset)
     batch = iterator.get_next()
     
     batch_input = tf.concat([batch[key] for key in sorted(batch.keys()) if key != 'mix'], 2)
