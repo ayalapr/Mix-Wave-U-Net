@@ -125,7 +125,7 @@ def optimise(model_config, experiment_id):
         if i==1:
             print("Finished first round of training, now entering fine-tuning stage")
 #             model_config["batch_size"] *= 2
-            model_config["lr"] = 1e-5
+#            model_config["lr"] = 1e-5        #TODO:solve sacred 
         while worse_epochs < model_config["worse_epochs"]: # Early stopping on validation set after a few epochs
             print("EPOCH: " + str(epoch))
             model_path = train(load_model=model_path)
