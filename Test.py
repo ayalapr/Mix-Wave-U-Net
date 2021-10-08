@@ -65,9 +65,9 @@ def test(model_config, partition, model_folder, load_model):
             batch_num += 1
         except tf.errors.OutOfRangeError as e:
             break
-
-    summary = tf.compat.v1.summary(value=[tf.compat.v1.summary.Value(tag="test_loss", simple_value=total_loss)])
-    writer.add_summary(summary, global_step=_global_step)
+    #TODO: solve
+    #summary = tf.compat.v1.summary(value=[tf.compat.v1.summary.Value(tag="test_loss", simple_value=total_loss)])
+    #writer.add_summary(summary, global_step=_global_step)
 
     writer.flush()
     writer.close()
