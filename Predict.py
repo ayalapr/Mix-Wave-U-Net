@@ -9,17 +9,17 @@ ex = Experiment('Mixwaveunet Prediction', ingredients=[config_ingredient])
 def cfg():
     model_path = os.path.join("checkpoints", "wet", "wet-1108000") # Load wet pretrained model by default
 
-    input_path = {'hi-hat': 'audio_examples/inputs/hihat.wav',
-  'kick': 'audio_examples/inputs/kick.wav',
-  'mix': 'audio_examples/inputs/wet_mix.wav',
-  'overhead_L': 'audio_examples/inputs/overheadL.wav',
-  'overhead_R': 'audio_examples/inputs/overheadR.wav',
-  'snare': 'audio_examples/inputs/snare.wav',
-  'tom_1': 'audio_examples/inputs/tom1.wav',
-  'tom_2': 'audio_examples/inputs/tom2.wav',
+    input_path = {'hi-hat': '/content/Mix-Wave-U-Net/audio_examples/inputs/hihat.wav',
+  'kick': '/content/Mix-Wave-U-Net/audio_examplesinputs/kick.wav',
+  'mix': '/content/Mix-Wave-U-Net/audio_examplesinputs/wet_mix.wav',
+  'overhead_L': '/content/Mix-Wave-U-Net/audio_examples/inputs/overheadL.wav',
+  'overhead_R': '/content/Mix-Wave-U-Net/audio_examples/inputs/overheadR.wav',
+  'snare': '/content/Mix-Wave-U-Net/audio_examples/inputs/snare.wav',
+  'tom_1': '/content/Mix-Wave-U-Net/audio_examples/inputs/tom1.wav',
+  'tom_2': '/content/Mix-Wave-U-Net/audio_examples/inputs/tom2.wav',
   'tom_3': None}
 
-    output_path = 'audio_examples/outputs/wet_mix.wav'
+    output_path = '/content/Mix-Wave-U-Net/audio_examples/outputs/wet_mix.wav'
     
 
 @ex.automain
