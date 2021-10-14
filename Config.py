@@ -10,7 +10,7 @@ def cfg():
                     "estimates_path" : "/content/drive/MyDrive/mixWaveUNet/estimates", # SET THIS PATH TO WHERE YOU WANT OUTPUTS PRODUCED BY THE TRAINED MODEL TO BE SAVED. Folder itself must exist!
                     "data_path" : "/content/drive/MyDrive/mixWaveUNet/Mix-U-Net_Data", # Set this to where the preprocessed dataset should be saved
 
-                    "model_base_dir" : "checkpoints", # Base folder for model checkpoints
+                    "model_base_dir" : "/content/drive/MyDrive/mixWaveUNet/checkpoints", # Base folder for model checkpoints
                     "log_dir" : "logs", # Base folder for logs files
                     "batch_size" : 16, # Batch size
                     "lr" : 1e-4, # Learning rate
