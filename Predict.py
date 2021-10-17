@@ -19,7 +19,7 @@ def cfg():
   'tom_2': '/content/Mix-Wave-U-Net/audio_examples/inputs/tom2.wav',
   'tom_3': None}
 
-    output_path = '/content/Mix-Wave-U-Net/audio_examples/outputs/wet_mix.wav'
+    output_path = '/content/drive/MyDrive/mixWaveUNet/outputs/wet_mix.wav'
     
 
 @ex.automain
